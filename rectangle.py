@@ -48,7 +48,7 @@ class Rectangle:
         else:
             return 0
         
-x = Rectangle(-4, 5)
+x = Rectangle(4, 7)
 print(x.is_valid())
 print(x.perimeter())
 print(x.area())
