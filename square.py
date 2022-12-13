@@ -51,7 +51,7 @@ class Square:
             return P
         else:
             return 0
-x = Square(-5)
+x = Square(5)
 print(x.is_valid())
 print(x.perimeter())
 print(x.area())
