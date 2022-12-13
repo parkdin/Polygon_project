@@ -62,7 +62,7 @@ class Circle:
         else:
             return 0
 
-x = Circle(-5)
+x = Circle(4)
 print(x.is_valid())
 print(x.diameter())
 print(x.circumference())
