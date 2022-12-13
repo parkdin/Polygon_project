@@ -66,6 +66,6 @@ class Triangle:
         s = (a + b + c) / 2
         Area = sqrt(s * (s - a) * (s -b) * (s -c))
         return Area
-x = Triangle(3, 4, 5)
+x = Triangle(4, 7, 5)
 print(x.perimeter())
 print(x.area())
