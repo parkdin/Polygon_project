@@ -5,7 +5,7 @@ class Square:
         area() -> float
         perimeter() -> float
         """
-        pass
+        self.square_side = square_side
 
     def is_valid(self) -> bool:
         """
@@ -16,7 +16,7 @@ class Square:
         Returns:
             bool: This method checks if the square is valid.
         """
-        pass
+        return self.square_side > 0
 
     
     def area(self):
@@ -29,7 +29,11 @@ class Square:
         Returns:
             float or int: return area of the square if the square is valid, 0 otherwise
         """
-        pass
+        if self.square_side > 0:
+            A = self.square_side ** 2
+            return A
+        else:
+            return 0
     
 
     def perimeter(self):
@@ -42,4 +46,12 @@ class Square:
         Returns:
             float: return perimeter of the square if the square is valid, 0 otherwise
         """
-        pass
+        if self.square_side > 0:
+            P = 4 * self.square_side
+            return P
+        else:
+            return 0
+x = Square(-5)
+print(x.is_valid())
+print(x.perimeter())
+print(x.area())
